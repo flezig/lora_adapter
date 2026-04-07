@@ -68,11 +68,12 @@
 ### 1. Подготовка датасета
 ```bash
 python prepare_task4_dataset.py
-
+```
 ### 2. Обучение LoRa
 ```bash
 python train_lora_task4.py
-
+```
 ### 3. Генерация adversarial-датасета
 ```bash
 python generate_adversarial_dataset.py
+```
