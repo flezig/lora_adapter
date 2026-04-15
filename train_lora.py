@@ -12,8 +12,8 @@ from trl import SFTConfig, SFTTrainer
 
 # НАСТРОЙКИ
 MODEL_NAME = os.environ.get("BASE_MODEL", "Qwen/Qwen2.5-1.5B-Instruct")
-DATA_DIR = "outputs/task4_data"
-OUTPUT_DIR = "outputs/task4_lora_model"
+DATA_DIR = "outputs/data"
+OUTPUT_DIR = "outputs/lora_model"
 
 
 USE_4BIT = False

@@ -9,8 +9,8 @@ from transformers import AutoModelForCausalLM, AutoTokenizer
 
 
 BASE_MODEL = os.environ.get("BASE_MODEL", "Qwen/Qwen2.5-1.5B-Instruct")
-ADAPTER_PATH = "outputs/task4_lora_model"
-OUT_XLSX = "outputs/generated_adversarial_dataset_task4.xlsx"
+ADAPTER_PATH = "outputs/lora_model"
+OUT_XLSX = "outputs/generated_adversarial_dataset.xlsx"
 N_SAMPLES = 1000
 
 USE_4BIT = False

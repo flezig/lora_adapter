@@ -6,9 +6,9 @@ import pandas as pd
 from sklearn.model_selection import train_test_split
 
 
-INPUT_XLSX = "data/task3_lora_dataset_1000.xlsx"
+INPUT_XLSX = "data/lora_dataset_1000.xlsx"
 INPUT_SHEET = "Dataset_Seed_200"
-OUT_DIR = Path("outputs/task4_data")
+OUT_DIR = Path("outputs/data")
 OUT_DIR.mkdir(parents=True, exist_ok=True)
 
 RANDOM_STATE = 42
@@ -157,7 +157,7 @@ def main():
     write_jsonl(test_records, OUT_DIR / "test.jsonl")
 
     # Параллельно сохраним CSV для проверки
-    pd.DataFrame(records).to_csv(OUT_DIR / "full_task4_dataset.csv", index=False, encoding="utf-8-sig")
+    pd.DataFrame(records).to_csv(OUT_DIR / "full_dataset.csv", index=False, encoding="utf-8-sig")
 
     print(f"Всего отобрано: {len(records)}")
     print(f"Train: {len(train_records)} | Val: {len(val_records)} | Test: {len(test_records)}")
